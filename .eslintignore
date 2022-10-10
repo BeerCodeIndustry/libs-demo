@@ -1,0 +1,5 @@
+.eslitrc
+/node_modules
+/dist
+/storybook-static
+lint-staged.config.js
