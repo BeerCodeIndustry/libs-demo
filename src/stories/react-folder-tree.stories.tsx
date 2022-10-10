@@ -1,16 +1,7 @@
 import { colors } from '@beercode/common-frontend'
-import { FolderTree, Theme } from '@beercode/react-folder-tree'
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-import styled from 'styled-components'
+import { FolderTree } from '@beercode/react-folder-tree'
 
 import { tree } from '../mocks/react-folder-tree.mocks'
-
-const ThemeContainer = styled.div<{ theme: Theme }>`
-  width: 100%;
-  height: 100%;
-  background: ${colors.BLACK};
-`
 
 export default {
   title: 'Libs/React Folder Tree',
