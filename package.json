@@ -20,7 +20,9 @@
     "deps": "yarn && yarn prepare-husky",
     "start": "start-storybook -p 6006",
     "build": "build-storybook",
-    "lint": "tsc --noEmit && eslint --no-error-on-unmatched-pattern --ext .js,.ts,.tsx . --fix"
+    "prepare-husky": "husky install",
+    "lint": "tsc --noEmit && eslint --no-error-on-unmatched-pattern --ext .js,.ts,.tsx . --fix",
+    "pre-commit": "npx --no-install lint-staged"
   },
   "eslintConfig": {
     "extends": [

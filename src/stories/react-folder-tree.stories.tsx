@@ -1,5 +1,7 @@
 import { colors } from '@beercode/common-frontend'
 import { FolderTree } from '@beercode/react-folder-tree'
+import '@storybook/react'
+import React from 'react'
 
 import { tree } from '../mocks/react-folder-tree.mocks'
 
@@ -8,18 +10,18 @@ export default {
   component: FolderTree,
 }
 
-export const LightFolderTree = () => (
+export const LightFolderTree: Record<string, any> = () => (
   <FolderTree tree={tree} onFileClick={() => {}} theme='light' />
 )
 
-export const DarkFolderTree = () => (
+export const DarkFolderTree: Record<string, any> = () => (
   <FolderTree tree={tree} onFileClick={() => {}} theme='dark' />
 )
 DarkFolderTree.parameters = {
   backgrounds: { default: 'dark' },
 }
 
-export const CustomLightFolderTree = () => (
+export const CustomLightFolderTre: Record<string, any> = () => (
   <FolderTree
     tree={tree}
     onFileClick={() => {}}
@@ -41,7 +43,7 @@ export const CustomLightFolderTree = () => (
   />
 )
 
-export const CustomDarkFolderTree = () => (
+export const CustomDarkFolderTree: Record<string, any> = () => (
   <FolderTree
     tree={tree}
     onFileClick={() => {}}
